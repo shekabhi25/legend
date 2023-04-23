@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+
+
+import Props2 from './Props2'
+import Props3 from './Props3'
+import Props4 from './Props4'
+
+import Css5 from './Css5';
+
+// const root2=ReactDOM.createRoot(document.getElementById(<props  name="abhishek" roll ={100} / >,'root2'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <App  name="abhishke"  lname={"gupta"} />
+
+
+       <Props2  name={"shivang"} lname={"yadav"} />
+   
+
+    <Props3  clg="lovely clg "/>
+    <Props4   company ="xyz"  salary={80000} msg="what msg"/>
+
+    <Css5/>
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
